@@ -6,7 +6,7 @@ from .forms import CityForm
 from .models import City
 
 def index(request):
-    url='http://api.openweathermap.org/data/2.5/weather?q={}&appid=a5480f06a661f4a49f3c077206e536ff'
+    url='http://api.openweathermap.org/data/2.5/weather?q={}&appid='
 
     if request.method == 'POST':
         form = CityForm(request.POST)
